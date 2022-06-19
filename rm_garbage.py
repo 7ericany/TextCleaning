@@ -23,7 +23,7 @@ def punc_alpha_num(word):
         if word[i].isalpha():
             count_alpha += 1
         elif word[i] in ('!', ",", "\'", ";", "\"", ".", "-", "?"):
-            if pos != 0 and pos != len(word)-1:
+            if i != 0 and i != len(word)-1:
                 if one_char == '0':
                     one_char = word[i]
                 else:
